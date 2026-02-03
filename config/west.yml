@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/urob
     - name: m165437
       url-base: https://github.com/M165437
+    - name: ktonini
+      url-base: https://github.com/ktonini
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,7 +20,7 @@ manifest:
       remote: urob
       revision: main
     - name: nice-view-gem
-      remote: m165437
+      remote: ktonini
       revision: main
   self:
     path: config
