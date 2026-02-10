@@ -1,0 +1,207 @@
+layout: {zmk_keyboard: corne}
+layers:
+  L1:
+  - ESC
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - CANCEL
+  - {t: BACKSPACE, s: DELETE}
+  - A
+  - {t: R, h: LCTRL}
+  - {t: S, h: LALT}
+  - {t: T, h: LCMD}
+  - {t: G, h: Sft+Ctl+LALT}
+  - {t: M, h: Sft+Ctl+LALT}
+  - {t: N, h: LCMD}
+  - {t: E, h: LALT}
+  - {t: I, h: LCTRL}
+  - O
+  - ENTER
+  - '&csl 2'
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - ;
+  - '&csl 2'
+  - TAB
+  - {t: SPACE, h: LSHFT}
+  - {t: '&num_dance', h: L2}
+  - {t: '&num_dance', h: L2}
+  - {t: RSHFT, h: sticky, s: '&caps_word'}
+  - '`'
+  L2:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - {t: '7', h: LCTRL}
+  - {t: '8', h: LALT}
+  - {t: '9', h: LCMD}
+  - {t: '0', h: Sft+Ctl+LALT}
+  - {t: LEFT, h: Sft+Ctl+LALT}
+  - {t: DOWN, h: LCMD}
+  - {t: UP, h: LALT}
+  - {t: RIGHT, h: LCTRL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&cmo 1', type: held}
+  - '&cmo 1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Fn:
+  - OUT TOG
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - POWER
+  - {t: '&sys_reset', h: '&bootloader'}
+  - F6
+  - {t: F7, h: LCTRL}
+  - {t: F8, h: LALT}
+  - {t: F9, h: LCMD}
+  - {t: F10, h: Sft+Ctl+LALT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&sys_reset', h: '&bootloader'}
+  - '&cmo 2'
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&cmo 2'
+  - BRI DN
+  - BRI UP
+  - '&cmo 1'
+  - '&cmo 1'
+  - CAPSLOCK
+  - {t: ▽, type: trans}
+combos:
+- p: [1, 13]
+  k: '!'
+  l: [L1, L2]
+- p: [2, 14]
+  k: '@'
+  l: [L1, L2]
+- p: [3, 15]
+  k: '#'
+  l: [L1, L2]
+- p: [4, 16]
+  k: $
+  l: [L1, L2]
+- p: [5, 17]
+  k: '%'
+  l: [L1, L2]
+- p: [13, 25]
+  k: ^
+  l: [L1, L2]
+- p: [14, 26]
+  k: '&'
+  l: [L1, L2]
+- p: [15, 27]
+  k: '*'
+  l: [L1, L2]
+- p: [16, 28]
+  k: (
+  l: [L1, L2]
+- p: [17, 29]
+  k: )
+  l: [L1, L2]
+- p: [7, 19]
+  k: '-'
+  l: [L1, L2, Fn]
+- p: [8, 20]
+  k: '='
+  l: [L1, L2, Fn]
+- p: [9, 21]
+  k: /
+  l: [L1, L2, Fn]
+- p: [6, 18]
+  k: PG UP
+  l: [L1, L2, Fn]
+- p: [18, 30]
+  k: PG DN
+  l: [L1, L2, Fn]
+- p: [19, 31]
+  k: '['
+  l: [L1, L2, Fn]
+- p: [20, 32]
+  k: ']'
+  l: [L1, L2, Fn]
+- p: [21, 33]
+  k: \
+  l: [L1, L2, Fn]
+- p: [1, 2, 3, 4]
+  k: BT CLR
+  l: [Fn]
+- p: [1, 13]
+  k: {t: BT, h: '0'}
+  l: [Fn]
+- p: [2, 14]
+  k: {t: BT, h: '1'}
+  l: [Fn]
+- p: [3, 15]
+  k: {t: BT, h: '2'}
+  l: [Fn]
+- p: [4, 16]
+  k: {t: BT, h: '3'}
+  l: [Fn]
+- p: [5, 17]
+  k: {t: BT, h: '4'}
+  l: [Fn]
+- p: [6, 7]
+  k: PP
+  l: [L1, L2, Fn]
