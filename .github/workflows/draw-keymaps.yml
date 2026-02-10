@@ -26,4 +26,4 @@ jobs:
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "img"                      # path to save produced SVG files (matches README)
       parse_args: "corne:'-l L1 L2 Fn'"        # specify layer names for parsing
-      draw_args: "corne:'-k corne'"            # use corne physical layout
+      draw_args: ""                             # let keymap-drawer auto-detect layout from ZMK keymap
