@@ -16,8 +16,3 @@ draw_config:
   #     <svg viewBox="0 0 24 24">
   #       <path d="..."/>
   #     </svg>
-
-# Parse configuration
-parse_config:
-  # ZMK-specific parsing options
-  # zmk_combos and zmk_behaviors are enabled by default, no need to specify
