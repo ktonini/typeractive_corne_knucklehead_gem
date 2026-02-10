@@ -1,0 +1,29 @@
+# Automated keymap drawing workflow using keymap-drawer
+# This workflow parses ZMK keymaps and generates SVG diagrams
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch: # can be triggered manually
+  push:               # automatically run on changes to following paths
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "knucklehead/*.dtsi"
+      - "keymap_drawer.config.yaml"
+  pull_request:
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "knucklehead/*.dtsi"
+      - "keymap_drawer.config.yaml"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write  # allow workflow to commit to the repo
+    with:
+      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
+      output_folder: "img"                      # path to save produced SVG files (matches README)
+      parse_args: "corne:'-l L1 L2 Fn'"        # specify layer names for parsing
+      draw_args: "corne:'-k corne'"            # use corne physical layout
