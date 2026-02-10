@@ -1,29 +1,33 @@
 # Automated keymap drawing workflow using keymap-drawer
-# This workflow parses ZMK keymaps and generates SVG diagrams
-name: Draw ZMK keymaps
+# Based on minusfive/knucklehead workflow: https://github.com/minusfive/knucklehead
+name: Draw keymap
 on:
   workflow_dispatch: # can be triggered manually
-  push:               # automatically run on changes to following paths
+  push:
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
       - "knucklehead/*.dtsi"
-      - "keymap_drawer.config.yaml"
-  pull_request:
-    paths:
-      - "config/*.keymap"
-      - "config/*.dtsi"
-      - "knucklehead/*.dtsi"
-      - "keymap_drawer.config.yaml"
+      - "keymap-drawer/config.yaml"
+      - ".github/workflows/draw-keymaps.yml"
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@dev
     permissions:
-      contents: write  # allow workflow to commit to the repo
+      contents: write
     with:
-      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
-      output_folder: "img"                      # path to save produced SVG files (matches README)
-      parse_args: "corne:'-l L1 L2 Fn'"        # specify layer names for parsing
-      draw_args: ""                             # let keymap-drawer auto-detect layout from ZMK keymap
+      install_branch: "dev" # branch to install keymap-drawer from
+      keymap_patterns: "config/*.keymap" # path to the keymaps to parse
+      config_path: "keymap-drawer/config.yaml" # config file, ignored if it doesn't exist
+      output_folder: "img" # path to save produced SVGs
+      extra_keymap_yaml: "corne:'keymap-drawer/combos.yaml'"
+      parse_args: "corne:'-l L1 L2 Fn'" # specify layer names for parsing
+      commit_message: "chore(draw): keymap"
+      fail_on_error: true
