@@ -11,7 +11,7 @@ This configuration is based on the [typeractive corne-wireless-view-zmk-config](
 
 ## Layout
 
-<img src="./img/corneish_zen.svg" alt="Knucklehead keymap layout graphical representation" width="100%" />
+<img src="./img/corne.svg" alt="Knucklehead keymap layout graphical representation" width="100%" />
 
 > Drawn with [@caksoylar's Keymap Drawer](https://github.com/caksoylar/keymap-drawer)
 
