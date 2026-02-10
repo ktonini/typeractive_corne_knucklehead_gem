@@ -20,5 +20,4 @@ draw_config:
 # Parse configuration
 parse_config:
   # ZMK-specific parsing options
-  zmk_combos: true  # Parse combo definitions
-  zmk_behaviors: true  # Parse behavior definitions
+  # zmk_combos and zmk_behaviors are enabled by default, no need to specify
