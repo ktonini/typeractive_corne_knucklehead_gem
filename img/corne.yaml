@@ -38,10 +38,10 @@ layers:
   - {t: ;, s: ':'}
   - {t: Fn, h: '$$mdi:close-box$$'}
   - $$mdi:keyboard-tab$$
-  - {t: L2, h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - {t: L2, h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: L2, h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '`', s: '~'}
   L2:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -81,10 +81,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:close-box$$', h: L2}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:close-box$$', h: L2}
+  - {t: '$$mdi:close-box$$', h: L2}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
@@ -124,10 +124,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:close-box$$', h: Fn}
   - $$mdi:brightness-7$$
-  - {t: '$$mdi:close-box$$', h: L2}
   - $$mdi:brightness-5$$
-  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:close-box$$', h: L2}
+  - {t: '$$mdi:close-box$$', h: L2}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 13]
