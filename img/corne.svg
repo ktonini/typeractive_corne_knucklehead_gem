@@ -613,10 +613,10 @@ path.combo {
 </g>
 <g transform="translate(40, 230)" class="key keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.5em" style="font-size: 62%">&amp;quicks…</tspan><tspan x="0" dy="1.0em" style="font-size: 62%">2</tspan>
-</text>
-</g>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 62%">&amp;quicks…</tspan></text>
+<a href="#Fn">
+<text x="0" y="34" class="key hold layer-activator">Fn</text>
+</a></g>
 <g transform="translate(120, 230)" class="key keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">Z</text>
@@ -1168,11 +1168,11 @@ path.combo {
 <use href="#mdi:backup-restore" xlink:href="#mdi:backup-restore" x="-11" y="-11" height="22" width="22.0" class="key bootloader tap glyph mdi:backup-restore"/>
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="-8" y="18" height="16" width="16.0" class="key bootloader hold glyph mdi:progress-download"/>
 </g>
-<g transform="translate(40, 230)" class="key keypos-24">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:close-box" xlink:href="#mdi:close-box" x="-11" y="-11" height="22" width="22.0" class="key tap glyph mdi:close-box"/>
+<g transform="translate(40, 230)" class="key held keypos-24">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key held"/>
+<use href="#mdi:close-box" xlink:href="#mdi:close-box" x="-11" y="-11" height="22" width="22.0" class="key held tap glyph mdi:close-box"/>
 <a href="#Fn">
-<text x="0" y="34" class="key hold layer-activator">Fn</text>
+<text x="0" y="34" class="key held hold layer-activator">Fn</text>
 </a></g>
 <g transform="translate(120, 230)" class="key keypos-25">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
