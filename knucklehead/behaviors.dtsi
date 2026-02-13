@@ -126,5 +126,18 @@
         flavor = "tap-preferred";
         bindings = <&bootloader>, <&sys_reset>;
     };
+
+    /*
+    - tap: Quicksilver macro (double-tap Control)
+    - hold: Fn layer
+    */
+    /omit-if-no-ref/ quicksilver_fn: quicksilver_fn {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <0>;
+        tapping-term-ms = <TAPPING_TERM_MS>;
+        quick-tap-ms = <QUICK_TAP_MS>;
+        flavor = "balanced";
+        bindings = <&csl Fn>, <&quicksilver>;
+    };
   };
 };
