@@ -68,7 +68,7 @@ layers:
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&quicksilver'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
