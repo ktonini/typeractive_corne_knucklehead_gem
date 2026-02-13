@@ -129,7 +129,8 @@
 
     /*
     - tap: Quicksilver macro (double-tap Control)
-    - hold: specified layer (first param), second param is ignored
+    - hold: Fn layer (layer 2)
+    Note: First param is layer for &mo, second param is ignored (passed to &quicksilver which doesn't use it)
     */
     /omit-if-no-ref/ quicksilver_fn: quicksilver_fn {
         compatible = "zmk,behavior-hold-tap";
