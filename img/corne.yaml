@@ -25,7 +25,7 @@ layers:
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
   - O
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Fn, h: '$$mdi:close-box$$'}
+  - '&quicksilver_fn'
   - Z
   - X
   - C
@@ -68,7 +68,7 @@ layers:
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&quicksilver'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
