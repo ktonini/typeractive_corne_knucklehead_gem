@@ -137,7 +137,7 @@
         tapping-term-ms = <TAPPING_TERM_MS>;
         quick-tap-ms = <QUICK_TAP_MS>;
         flavor = "balanced";
-        bindings = <&csl Fn>, <&quicksilver>;
+        bindings = <&mo Fn>, <&quicksilver>;
     };
   };
 };
