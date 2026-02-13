@@ -129,15 +129,15 @@
 
     /*
     - tap: Quicksilver macro (double-tap Control)
-    - hold: Fn layer
+    - hold: specified layer
     */
     /omit-if-no-ref/ quicksilver_fn: quicksilver_fn {
         compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <0>;
+        #binding-cells = <1>;
         tapping-term-ms = <TAPPING_TERM_MS>;
         quick-tap-ms = <QUICK_TAP_MS>;
         flavor = "balanced";
-        bindings = <&mo Fn>, <&quicksilver>;
+        bindings = <&mo>, <&quicksilver>;
     };
   };
 };
